@@ -14,4 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_kunlun2.mk
+    $(LOCAL_DIR)/lineage_kunlun2.mk
+
+COMMON_LUNCH_CHOICES := \
+    lineage_kunlun2-eng \
+    lineage_kunlun2-user \
+    lineage_kunlun2-userdebug

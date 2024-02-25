@@ -16,15 +16,11 @@
 
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Pixel Experience targets
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_USES_AOSP_RECOVERY := true
-
 # Inherit some common Lineage stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_kunlun2
+PRODUCT_NAME := lineage_kunlun2
 PRODUCT_BRAND := lenovo
 PRODUCT_DEVICE := kunlun2
 PRODUCT_MANUFACTURER := lenovo
